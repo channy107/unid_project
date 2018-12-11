@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+   <head>
+      <title>Elements - Intensify by TEMPLATED</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+      <style>
+         body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Karma", sans-serif
+         }
+         .w3-bar-block .w3-bar-item {
+            padding: 20px
+         }
+      </style>
+   </head>
+   <body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<nav class="left">
+					<a href="#menu"><span>Menu</span></a>
+				</nav>
+				<a href="index.html" class="logo"><img src="{% static 'app/img/logo.png' %}" width="400px" height="auto"></img></a>
+				<nav class="right">
+					<a href="login.html" class="button alt">Log in</a>
+				</nav>
+			</header>
+
+      <!-- Menu -->
+         <nav id="menu">
+            <ul class="links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="adoption.html">Adoption</a></li>
+               <li><a href="community.html">Community</a></li>
+               <li><a href="croudFund.html">CroudFund</a></li>
+            </ul>
+            <ul class="actions vertical">
+               <li><a href="login.html" class="button fit">Login</a></li>
+            </ul>
+         </nav>
+
+      <!-- Main -->
+      <section id="main" class="wrapper">
+         <div class="inner">
+		 		<header class="align-center">
+					  <h1>Community</h1>
+				   </header>
+            <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+               <!-- First Photo Grid-->
+               <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+                  <div class="w3-quarter">
+                     <a href="profile_GaGa.html"><img src="{% static 'app/img/dog4.png' %}" alt="Sandwich" style="width:100%"></a>
+                     <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                     <p>
+                        Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                     </p>
+                  </div>
+                  <div class="w3-quarter">
+                     <a href="profile_HunChan.html"><img src="{% static 'app/img/dog5.png' %}" alt="Sandwich" style="width:100%"></a>
+                     <h3>Let Me Tell You About This Steak</h3>
+                     <p>
+                        Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+                     </p>
+                  </div>
+                  <div class="w3-quarter">
+                     <a href="profile_JeaGu.html"><img src="{% static /app/img/dog6.png' %}" alt="Sandwich" style="width:100%"></a>
+                     <h3>Cherries, interrupted</h3>
+                     <p>
+                        Lorem ipsum text praesent tincidunt ipsum lipsum.
+                     </p>
+                     <p>
+                        What else?
+                     </p>
+                  </div>
+                  <div class="w3-quarter">
+                     <a href="profile_ReaHyup.html"><img src="{% static 'app/img/dog7.png' %}" alt="Sandwich" style="width:100%"></a>
+                     <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                     <p>
+                        Lorem ipsum text praesent tincidunt ipsum lipsum.
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Second Photo Grid-->
+               <div class="w3-row-padding w3-padding-16 w3-center">
+                  <div class="w3-quarter">
+                     <a href="profile_SuJea.html"><img src="{% static 'app/img/dog1_1.png' %}" alt="Sandwich" style="width:100%"></a>
+                     <h3>All I Need Is a Popsicle</h3>
+                     <p>
+                        Lorem ipsum text praesent tincidunt ipsum lipsum.
+                     </p>
+                  </div>
+                  <div class="w3-quarter">
+                     <a href="profile_SungGa.html"><img src="{% static 'app/img/dog3.png' %}" alt="Sandwich" style="width:100%"></a>
+                     <h3>Salmon For Your Skin</h3>
+                     <p>
+                        Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+                     </p>
+                  </div>
+                  <div class="w3-quarter">
+                     <a href="profile_YouJung.html"><img src="{% static 'app/img/dog2_1.png' %}" alt="Sandwich" style="width:100%"></a><br>
+                     <img src="{% static 'app/img/recommended.png' %}" style="
+                          width: 20px;
+                          height: 20px;
+                          position: relative;
+                          ">150
+                    <img src="{% static 'app/img/coin.png' %}" style="
+                               width: 20px;
+                               height: 20px;
+                               position: relative;
+                               ">15eth
+                     <h3>The Perfect Sandwich, A Real Classic</h3>
+                     <p>
+                        Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+                     </p>
+                  </div>
+                  <div class="w3-quarter">
+                     <a href="profile_NaHyun.html"><img src="{% static 'app/img/dog8.png' %}" alt="Sandwich" style="width:100%"></a>
+                     <h3>Le French</h3>
+                     <p>
+                        Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Pagination -->
+               <div class="w3-center w3-padding-32">
+                  <div class="w3-bar">
+                     <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                     <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                     <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                     <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                     <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                     <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                  </div>
+               </div>
+
+               <hr id="about">
+
+               <!-- End page content -->
+            </div>
+
+         </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+         <div class="inner">
+            <h2>Get In Touch</h2>
+            <ul class="actions">
+               <li>
+                  <span class="icon fa-phone"></span><a href="#">(000) 000-0000</a>
+               </li>
+               <li>
+                  <span class="icon fa-envelope"></span><a href="#">information@untitled.tld</a>
+               </li>
+               <li>
+                  <span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000
+               </li>
+            </ul>
+         </div>
+         <div class="copyright">
+            &copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
+         </div>
+      </footer>
+
+      <!-- Scripts -->
+      <script src="{% static 'app/js/jquery.min.js' %}"></script>
+      <script src="{% static 'app/js/jquery.scrolly.min.js' %}"></script>
+      <script src="{% static 'app/js/skel.min.js' %}"></script>
+      <script src="{% static 'app/js/util.js' %}"></script>
+      <script src="{% static 'appp/js/main.js' %}"></script>
+
+   </body>
+</html>

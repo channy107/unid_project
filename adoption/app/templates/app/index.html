@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+	<head>
+		<title>Intensify by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'app/css/main.css' %}" />
+
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<nav class="left">
+					<a href="#menu"><span>Menu</span></a>
+				</nav>
+				<a href="index.html" class="logo"></a>
+				<nav class="right">
+					<a href="login.html" class="button alt">Log in</a>
+				</nav>
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="adoption.html">Adoption</a></li>
+					<li><a href="community.html">Community</a></li>
+	               <li><a href="croudFund.html">CroudFund</a></li>
+				</ul>
+				<ul class="actions vertical">
+					<li><a href="login.html" class="button fit">Login</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="content">
+					<a href="index.html" class="logo"><img src="{% static 'app/img/logo.png' %}" width="800px" height="auto"></img></a>
+					<p>유기견 보호 </p>
+					<ul class="actions">
+						<li><a href="adoption.html" class="button scrolly">Get Started</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<div class="inner flex flex-3">
+					<div class="flex-item left">
+						<div>
+							<h3>유기견 입양</h3>
+							<p>스마트 컨트랙을 통한 입양 절차<br /> </p>
+						</div>
+						<div>
+							<h3>클라우드 펀딩을 통한 기부</h3>
+							<p>띠앗의 코인을 이용한 클라우드 펀딩 <br>및 기부</p>
+						</div>
+					</div>
+					<div class="flex-item image fit round">
+						<img src="{% static 'app/img/dogmain.png' %}" width="300px" height="300px" alt="" />
+					</div>
+					<div class="flex-item right">
+						<div>
+							<h3>지속적인 관리</h3>
+							<p>스마트칩을 통한 지속적인 관리 시스템</p>
+						</div>
+						<div>
+							<h3>커뮤니티</h3>
+							<p>입양된 동물을 지속적으로 커뮤니티에 인증하며 띠앗 코인을 얻어가며 신뢰 확보</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<h2>Feugiat lorem</h2>
+					<figure>
+					    <blockquote>
+					        "Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra<br /> magna etiam lorem ultricies in diam. Sed arcu cras consequat."
+					    </blockquote>
+					    <footer>
+					        <cite class="author">Jane Anderson</cite>
+					        <cite class="company">CEO, Untitled</cite>
+					    </footer>
+					</figure>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner flex flex-3">
+					<div class="flex-item box">
+						<div class="image fit">
+							<img src="{% static '/app/img/dog1_1.png' %}" alt="" />
+						</div>
+						<div class="content">
+							<h3 align="center">최근 게시물</h3>
+							<p>밍밍이와 함께 하는 날들, 너무나 행복하다. 나와 꼭 함께 해주길, 띠앗이 나의 인생을 바꾸었다. </p>
+						</div>
+					</div>
+					<div class="flex-item box">
+						<div class="image fit">
+							<img src="{% static 'app/img/dog10.jpg' %}" alt="" />
+						</div>
+						<div class="content">
+							<h3 align="center">인기 게시글</h3>
+							<p>나의 가장 사랑스러운 푸푸! 오늘도, 내일도 나의 편인 너, 띠앗이 내게 가족의 정을 선물해주었다.</p>
+						</div>
+					</div>
+					<div class="flex-item box">
+						<div class="image fit">
+							<img src="{% static 'app/img/dog9.png' %}" alt="" />
+						</div>
+						<div class="content">
+							<h3 align="center">입양 정보</h3>
+							<p>푸들 남아<br>따뜻한 가족의 품으로 돌아가고 싶어합니다 </p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<h2>Get In Touch</h2>
+					<ul class="actions">
+						<li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li>
+						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
+						<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'app/js/jquery.min.js' %}"></script>
+			<script src="{% static 'app/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'app/js/skel.min.js' %}"></script>
+			<script src="{% static 'app/js/util.js' %}"></script>
+			<script src="{% static 'app/js/main.js' %}"></script>
+
+	</body>
+</html>
