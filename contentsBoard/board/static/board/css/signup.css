@@ -1,0 +1,50 @@
+
+body{
+background: #d6d6d6;
+}
+
+#outline{
+display: table;
+margin: 187px;
+}
+
+#container{
+background: white;
+display: table-cell;
+vertical-align: middle;
+width: 1050px;
+height: 540px;
+margin: 0 auto;
+box-shadow: 0px 0px 20px 0px #888888;
+}
+
+#contents{
+display: grid;
+grid-template-columns: 1fr 1fr;
+text-align: center;
+}
+
+#logo{
+display: inline-block;
+}
+
+#signUpLinks{
+display: inline-block;
+margin-left: -50px;
+}
+
+#signup{
+}
+
+@media ( max-width: 1200px ) {
+    #contents{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #signUpLinks{
+        display: inline-block;
+        margin-left: 0px;
+    }
+}
+
+
