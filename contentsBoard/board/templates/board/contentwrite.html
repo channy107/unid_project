@@ -7,10 +7,49 @@
 <html lang="en">
 <head>
     <link href="{% static 'board/css/contentwrite.css' %}" rel="stylesheet">
-
 </head>
 <body>
-<h1>게시판1</h1>
+{% comment %} <h1>게시판1</h1>
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class="form-group">
+        <br>
+        <label for="title">제목:</label>
+        <textarea class="form-control" rows="1" name="title"></textarea>
+    </div>
+    <div class="form-group">
+        <br>
+        <label for="tag">태그:</label>
+        <textarea class="form-control" rows="1" name="tag"></textarea>
+    </div>
+    <div class="form-group">
+        <br>
+        <label for="price">가격:</label>
+        <textarea class="form-control" rows="1" name="price"></textarea>
+    </div>
+
+        <input type="file" name="my_file">
+        <br>
+        
+
+        <div class="form-group">
+            <label for="content">내용:</label>
+            <textarea class="form-control" rows="10" name="content"></textarea>
+        </div>
+        <input type="submit" value="글쓰기완료">
+
+</form> {% endcomment %}
+<div class="container1">
+    <!-- contents InFo -->
+    <div class="rows">
+        <div class="row">
+            <div class="contents-info">
+                
+                <h2 align="left">
+                    <b> 콘텐츠 등록 </b>
+                </h2>
+                 <h1>게시판1</h1>
 <form action="" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
 
@@ -41,6 +80,15 @@
         <input type="submit" value="글쓰기완료">
 
 </form>
+             </div>   
+             
+        </div>
+    </div>
+        <!-- preview -->
+        <div class="row">
+                
+        </div>
+</div>
 {% endblock %}
 </body>
 </html>
