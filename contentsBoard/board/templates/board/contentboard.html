@@ -20,15 +20,16 @@
         </div>
 
         <div class="col-lg-9">
-            <h5>인기글</h5>
-            <div class="container">
-                <hr>
+            <h4 class="content-head">인기글</h4>
+
+            <div class="content-container">
+
                 {% for info in board %}
                 <div class="user">
                     <img src="{% static 'board/icon/profle-icon.png' %}" border="0" width="35" height="35">&nbsp
-                    <span class="writer">{{info.id}}</span>
-                    <span class="writing-time">{{info.created_date}}</span>
-                    <span class="contents-kind">{{info.tag}}</span>
+                    <span class="writer">{{info.writeremail}}</span>
+                    <span class="writing-time">{{info.publisheddate}}</span>
+                    <span class="contents-kind">{{info.category}}</span>
                     </div>
 
                 <div class="row">
@@ -42,13 +43,13 @@
 
                     <div class="detail-content">
                         <h3>{{info.title}}</h3>
-                        <p>{{info.content}}</p></div>
+                        <p>{{info.contents}}</p></div>
                             <!--<a class="btn btn-primary" href="#">View Project</a>-->
                     <div class="doc_info">
                         
-					    <span class="user-tag">#자소서#레포트</span>
+					    <span class="user-tag">{{info.tags}}</span>
                             <span class="divide">|</span>
-						<span class="price_v4">1,100원</span>
+						<span class="price_v4">{{info.price}}</span>
                             <span class="divide">|</span>
                         <span class="download-count">다운로드수</span>
                     </div>
@@ -57,45 +58,11 @@
 
       <hr>
                 {% endfor %}
-        <div class="user">
-                    <img src="{% static 'board/icon/profle-icon.png' %}" border="0" width="35" height="35">&nbsp
-                    <span class="writer">작성자</span>
-                    <span class="writing-time">3일전</span>
-                    <span class="contents-kind">#학교정보</span>
-                    </div>
-                <div class="row">
 
-                    <div class="main-col-md-3">
-                        <a href="#">
-                            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/200x200" alt="">
-                        </a>
-                    </div>
-                <div class="col-md-5">
+            <hr class ="devide">
+            <h4 class="content-head">최신글</h4>
+            <div class="content-container">
 
-                    <div class="detail-content">
-                        <h3>한양대 교양추천</h3>
-                        <p>교양장인인 제가 생각했을때 가장 추천할만한 교양을 꼽자면 당연히 그거 죠
- 그 교양 그 이름이 무엇이냐.....
-유쾌한 이노베이션 정효찬 교수님
-교양으로 듣는 논어와 맹자
-인간과 음악적 상상력 정경성 교수님
-혁신과 잡종의 과학사 남영 교수님 이네요..</p></div>
-                            <!--<a class="btn btn-primary" href="#">View Project</a>-->
-                    <div>
-                        <span class="main-voting"><img src="{% static 'board/icon/dollar.png' %}" border="0" width="18" height="18"></span>3.29
-                        <span class="main-voting">
-                        <img src="{% static 'board/icon/heart-icon.png' %}" border="0" width="20" height="20"></span>10
-                        <span class="main-voting">
-                        <img src="{% static 'board/icon/wordballoon-icon.png' %}" border="0" width="20" height="20"></span>4
-
-
-                    </div>
-                </div>
-                </div>
-            </div>
-            <h5>최신글</h5>
-            <div class="container">
-                <hr>
                 <div class="user">
                     <img src="{% static 'board/icon/profle-icon.png' %}" border="0" width="35" height="35">&nbsp
                     <span class="writer">작성자</span>

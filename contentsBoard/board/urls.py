@@ -21,4 +21,5 @@ urlpatterns = [
     path('contentboard', contentboard, name='contentboard'),
     path('contentwrite', contentwrite, name='contentwrite'),
     path('contentsdetail', contentsdetail, name='contentsdetail'),
+    path('mywallet', mywallet, name='mywallet'),
 ]
