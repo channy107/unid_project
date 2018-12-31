@@ -22,4 +22,5 @@ urlpatterns = [
     path('contentwrite', contentwrite, name='contentwrite'),
     path('contentsdetail', contentsdetail, name='contentsdetail'),
     path('mywallet', mywallet, name='mywallet'),
+    path('info_write', info_write, name='info_write'),
 ]

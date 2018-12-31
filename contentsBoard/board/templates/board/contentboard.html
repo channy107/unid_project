@@ -3,6 +3,7 @@
 {% block content %}
 <head>
 <link href="{% static 'board/css/main.css' %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean" rel="stylesheet">
 </head>
 <div class="container">
 <div class="row">
@@ -36,7 +37,7 @@
 
                     <div class="main-col-md-3">
                         <a href="#">
-                            <img class="img-fluid rounded mb-3 mb-md-0" src="{% static 'board/img/'%}{{info.file}}" width="200" height="200">
+                            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/200x200" alt="">
                         </a>
                     </div>
                 <div class="col-md-5">
@@ -49,17 +50,17 @@
                         
 					    <span class="user-tag">{{info.tags}}</span>
                             <span class="divide">|</span>
-						<span class="price_v4">{{info.price}}</span>
+						<span class="price_v4">{{info.price}}$</span>
                             <span class="divide">|</span>
                         <span class="download-count">다운로드수</span>
                     </div>
                 </div>
                 </div>
 
-      <hr>
+   <hr class ="devide">
                 {% endfor %}
 
-            <hr class ="devide">
+
             <h4 class="content-head">최신글</h4>
             <div class="content-container">
 
