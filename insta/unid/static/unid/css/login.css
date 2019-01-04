@@ -1,0 +1,41 @@
+body{
+background: #d6d6d6;
+}
+
+#container{
+background: white;
+margin: 0 auto;
+margin-top:150px;
+width: 400px;
+height: 540px;
+}
+
+#contents{
+margin: 0 auto;
+width: 80%
+}
+
+#logo{
+margin: 0 auto;
+width: 80%;
+}
+
+#description{
+margin bottom
+}
+
+#logInLinks{
+display: block;
+margin: 0 auto;
+width: 80%
+}
+
+#signup{
+display: inline-block;
+}
+
+#logo{
+margin-top: 20px;
+}
+
+

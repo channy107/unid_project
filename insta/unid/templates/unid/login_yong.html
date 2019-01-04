@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+{% extends 'unid/navigationbar.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>(로고) log in</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'unid/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'unid/css/shop-homepage.css' %}" rel="stylesheet">
+    <link href="{% static 'unid/css/login.css' %}" rel="stylesheet">
+    <!-- 검색아이콘 -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="contents">
+            <div class="logo" id="logo">
+            <br>
+                <br>
+                <br>
+                <br>
+                <p style="text-align: center;"><img style="width:210px" src="{% static 'unid/icon/unid_icon.png' %}"></p>
+            <br>
+            </div>
+        <div id="description">
+            <p style="text-align: center;"><strong>소셜 미디어 계정으로 로그인 하세요</strong></p>
+        </div>
+        <div id="logInLinks">
+            <p><a href="" target="_blank"><img style="width:250px" src="{% static 'unid/icon/google.png' %}" ></a></p>
+            <p><a href="" target="_blank"><img style="width:250px" src="{% static 'unid/icon/facebook.png' %}"></a></p>
+            <p><a href="https://kauth.kakao.com/oauth/authorize?client_id=122f531f95d70dabb69ff17f4f1b0be2&redirect_uri=http://localhost:8000/unid/oauth&response_type=code" target="_blank"><img style="width:250px" src="{% static 'unid/icon/kakao.png' %}"></a></p>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}
