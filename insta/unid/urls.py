@@ -29,4 +29,5 @@ urlpatterns = [
     path('createaccount/', createaccount, name='createaccount'),
     path('mypage/', mypage, name='mypage'),
     url(r'^accounts/', include('allauth.urls')),
+    path('like/', post_like, name='post_like'),
 ]
